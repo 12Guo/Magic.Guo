@@ -29,7 +29,7 @@
             outline: none;
             opacity: 0;
             /* // ios上透明度为0时依然有光标 */
-            /* margin-left: -100%;  */
+            margin-left: -100%; 
             -webkit-tap-highlight-color: transparent;
         }
         .labels{
@@ -52,9 +52,12 @@
             font-size: 35px;
             text-align: center;
             padding-bottom: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .active:after{
-            content: ' ';
+            content: '  ';
             display: inline-block;
             height: 100%;
             width: 2px;
