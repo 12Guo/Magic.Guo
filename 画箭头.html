@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3画箭头</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 40px;
+            border: 1px solid rgb(145, 199, 229);
+            position: relative;
+        }
+        .content{
+            width: 30px;
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+        }
+        .jiantou-1{
+            width: 0;
+            height: 0;
+            position: relative;
+            z-index: 100;
+        }
+        .jiantou-1::before, .jiantou-1::after{
+            position: absolute;
+            content: "";
+            border-top: 10px solid #fff;
+            border-right: 14px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 14px solid transparent;
+        }
+        .jiantou-1::before{
+            border-top: 10px solid rgba(14, 235, 69, 0.5);
+        }
+        .jiantou-1::after{
+            top: -2px;
+        }
+        .jiantou-2{
+            width: 0;
+            height: 0;
+            position: relative;
+            top: 6px;
+        }
+        .jiantou-2::before, .jiantou-2::after{
+            position: absolute;
+            content: "";
+            border-top: 10px solid #fff;
+            border-right: 14px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 14px solid transparent;
+        }
+        .jiantou-2::before{
+            border-top: 10px solid rgb(14, 235, 69);
+        }
+        .jiantou-2::after{
+            top: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="jiantou-1"></div>
+            <div class="jiantou-2"></div>
+        </div>
+    </div>
+   
+    <img src="111" alt="" name="qq">
+
+</body>
+<script>
+    const obj = {
+        a: 1,
+        b: 2,
+        inObj: {
+            c: 1
+        }
+    }
+
+    qq.onerror = function(){
+        
+    }
+</script>
+</html>
